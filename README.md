@@ -17,3 +17,9 @@ Data Engineering: Developed a Cumulative Risk Index evaluating environmental fac
 Cloud Infrastructure (Azure): Utilized Azure Blob Storage and Account Key Authentication to host and protect diagnostic audit logs and ensure a live data pipeline. 
 
 Visualization: Power BI leveraged for cross filter diagnostics, visualizing risk distribution, and isolating high priority "False Negatives".
+
+Acknowledgement & Data Sources
+
+Primary Dataset: Sensor metadata provided by Wayve AI via their open source safety audit logs.
+
+Imagery: Scene overview grid and environment visualizations are sourced from Wayve AI's diagnostic dataset.
