@@ -1,15 +1,19 @@
 # wayve-ai-car-safety-audit
 
-Situation: Conducted a diagnostic audit of autonomous driving sensor metadata to identify and trace logic gaps in model decision making
+Situation: Conducted a diagnostic audit of autonmous driving sensor metadata to identify and trace logic gaps in model decision making.
 
-Action: Engineered a Python based Risk Scoring Engine to perform rigorous evaluation of sensor logs, isolating 16 specific "Silent Failures" where model behaviour diverged from human "Ground Truth"
+Action: Engineered a Python based Risk Scoring Engine t perform a rigorous evaluation of sensor logs, identifying 24 systemic safety gaps. The result revealed 13 "Critical Failures" (Risk > 13) where the model remained in low sensitivity mode despite extreme danger levels. 
 
-Result: Achieved an 84% alignment success rate, ensuring safety prtocols met internal validation benchmarks and providing clear documentation for model retraining
+Result: Identified 13 critical edge cases representing 8.21% of total project risk. 
 
-Programming: Python(Pandas) used for data ingestion, cleaning, and developing logic based risk engine
+Root Cause Analysis: 100% of critical failures involve Vulnerable Road Users (VRUs), specifically 7 cases of pedestrians crossing and 6 involving cyclists/motorbikes.
 
-Data Engineering: Developed a weighted scoring system to evaluate environmental factors like Weather, Road Type, Pedestrian presence
+Strategic Priority: recalibrating VRU detection in urban/ residential environments is now the #1 priority for model retraining. 
 
-Cloud Infrastructure (Azure): Utilized Azure Blob Storage for hosting large scale sensor metadata and diagnostic audit logs
+Programming: Python(Pandas) used for data ingestion, cleaning, and developing logic based risk engine.
 
-Visualization: Power BI used to visualize risk distribution and identify high priority edge cases
+Data Engineering: Developed a Cumulative Risk Index evaluating environmental factors (e.g Weather) and dynamic actors (e.g Pedestrians, Cyclists).
+
+Cloud Infrastructure (Azure): Utilized Azure Blob Storage and Account Key Authentication to host and protect diagnostic audit logs and ensure a live data pipeline. 
+
+Visualization: Power BI leveraged for cross filter diagnostics, visualizing risk distribution, and isolating high priority "False Negatives".
